@@ -26,7 +26,7 @@ export const Item = ({code})=>{
   
           try{
             setLoading(false)
-            const res = await fetch(`http://localhost:8080/jav/search?code=${code}&provider=r18`);
+            const res = await fetch(`https://living-matelda-deadlock-76375b8c.koyeb.app/r18/${code}`);
             const data = await res.json();
             setJavData(data);
             // lsJavData[code] = JSON.stringify(data);
